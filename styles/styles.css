@@ -257,7 +257,7 @@ section.skill {
 section.skill .col-2:nth-child(2) p {
 	font-family: 'Space Mono', monospace;
 	font-size: 20px;
-	margin: 0 20px;
+	margin: 0 10px;
 	color: rgba(255,255,255,1);
 }
 
@@ -462,7 +462,7 @@ footer a:not(:hover){
 
 	section.about h2{
 		font-size: 26px;
-		margin-top: 55px;
+		margin-top: 70px;
 	}
 
 	.mobile-nav{
