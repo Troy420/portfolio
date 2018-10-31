@@ -1,3 +1,19 @@
+
+//-----------------------------------TYPE 3
+$(function(){
+  $(".mobile-nav-toggle").click(function(){
+    $(".mobile-nav").slideToggle();
+
+    var status = $(".mobile-nav-toggle").hasClass('is-open');
+    if(status){
+        $(".mobile-nav-toggle").removeClass('is-open');
+    }else{
+      $(".mobile-nav-toggle").addClass('is-open');
+    }
+  })
+})
+
+
 //------------------------------------TYPE 1
 
 // $(function(){
@@ -54,17 +70,3 @@
 //     $blankATags.on('click', onBlankAClick);
 //   });
 // })(jQuery);
-
-//-----------------------------------TYPE 3
-$(function(){
-  $(".mobile-nav-toggle").click(function(){
-    $(".mobile-nav").slideToggle();
-
-    var status = $(".mobile-nav-toggle").hasClass('is-open');
-    if(status){
-        $(".mobile-nav-toggle").removeClass('is-open');
-    }else{
-      $(".mobile-nav-toggle").addClass('is-open');
-    }
-  })
-})

@@ -258,7 +258,7 @@ section.skill .col-2:nth-child(2) p {
 	font-family: 'Space Mono', monospace;
 	font-size: 20px;
 	margin: 0 20px;
-	color: rgb(255,255,255,1);
+	color: rgba(255,255,255,1);
 }
 
 section.skill .col-50 h2{
@@ -436,7 +436,9 @@ footer a:not(:hover){
 	.html-svg,
 	.css-svg,
 	.php-svg,
-	.js-svg{
+	.js-svg,
+	.python-svg,
+	.java-svg{
 		margin: 10px auto;
 		width: 12vw;
 	}
@@ -456,5 +458,13 @@ footer a:not(:hover){
 
 	section.resume .home-cta {
 		font-size: 3vh;
+	}
+
+	section.about h2{
+		font-size: 26px;
+	}
+
+	.mobile-nav{
+		padding: 20px 0 5px;
 	}
 }
