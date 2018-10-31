@@ -235,6 +235,7 @@ section.about{
 section.about h2{
 	font-family: 'Muli', sans-serif;
 	font-size: 35px;
+	margin-top: 70px;
 	color: rgba(0,0,01);
 }
 
@@ -462,7 +463,6 @@ footer a:not(:hover){
 
 	section.about h2{
 		font-size: 26px;
-		margin-top: 70px;
 	}
 
 	.mobile-nav{
