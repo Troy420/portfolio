@@ -262,7 +262,7 @@ section.skill .col-2:nth-child(2) p {
 }
 
 section.skill .col-50 h2{
-	color: rgb(255,255,255,1);
+	color: rgba(255,255,255,1);
 	font-family: 'Muli', sans-serif;
 	font-size: 40px;
 	width: 100%;
