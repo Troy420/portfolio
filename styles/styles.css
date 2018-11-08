@@ -98,9 +98,8 @@ body {
 }
 
 .home-wrap header .logo {
-  max-width: 135px;
+  margin: 0px auto;
   padding: 0;
-  margin: 0;
   text-align: center;
   font-family: antraste;
   font-size: 6vw;
