@@ -114,10 +114,8 @@ body {
 }
 
 .site-nav a:hover {
-  background-color: rgba(60, 60, 70, 1);
-  color: rgba(255, 255, 255, 1);
-  padding: 5px;
-  border-radius: 3px;
+  font-size: 2vw;
+  margin: -10px;
   transition: all 300ms ease-in-out;
 }
 
