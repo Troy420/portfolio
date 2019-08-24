@@ -86,6 +86,39 @@
       border-radius: 50%;
       border: 3px solid #eece1a; }
 
+@media screen and (max-width: 500px) {
+  main#home .lg-heading {
+    font-size: 50px; }
+  .sm-heading {
+    font-size: 13px; } }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 65vh;
+    transform: translate3d(-100%, 0, 0); }
+    .menu-nav .nav-item .nav-link {
+      font-size: 25px; }
+  .menu-branding {
+    height: 35vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      height: 140px;
+      width: 140px; } }
+
 * {
   box-sizing: border-box; }
 
