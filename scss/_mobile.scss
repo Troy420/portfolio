@@ -1,10 +1,16 @@
-//Desktops & Laptops
-// @include mediaLg {
-// }
+// Widescreens
+@include mediaXL {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
-//Widescreens
-// @include mediaXL {
-// }
+// Desktops & Laptops
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 //Tablets & Small Laptops
 @include mediaMd {
@@ -63,6 +69,10 @@
       width: 250px;
     }
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 //Smartphones
@@ -72,5 +82,9 @@
   }
   .sm-heading {
     font-size: 1rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
