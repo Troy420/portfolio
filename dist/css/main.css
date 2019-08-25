@@ -285,11 +285,16 @@ main {
     font-size: 1rem; }
   .projects {
     grid-template-columns: 1fr; }
-  main#contact .lg-heading {
+  main .lg-heading {
     font-size: 3rem;
     margin-top: 1rem; }
-  main#contact .sm-heading {
+  main .sm-heading {
     font-size: 0.8rem; }
   .boxes div {
     font-size: 1rem;
-    padding: 0.5rem 1.5rem; } }
+    padding: 0.5rem 1.5rem; }
+  .about-info .bio-image {
+    height: 200px;
+    width: 200px; }
+  .bio p {
+    font-size: 1rem; } }
