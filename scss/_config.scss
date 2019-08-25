@@ -29,15 +29,24 @@ $background-opacity: 0.8;
   }
 }
 
-//media queries mixins
-@mixin mediaSm {
-  @media screen and (max-width: 500px) {
-    @content;
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }
 
 @mixin mediaMd {
   @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+//media queries mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
     @content;
   }
 }

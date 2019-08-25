@@ -1,12 +1,10 @@
-//Smartphones
-@include mediaSm {
-  main#home .lg-heading {
-    font-size: 50px;
-  }
-  .sm-heading {
-    font-size: 13px;
-  }
-}
+//Desktops & Laptops
+// @include mediaLg {
+// }
+
+//Widescreens
+// @include mediaXL {
+// }
 
 //Tablets & Small Laptops
 @include mediaMd {
@@ -49,12 +47,30 @@
       width: 140px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+
+    .bio-image {
+      height: 250px;
+      width: 250px;
+    }
+  }
 }
 
-//Desktops & Laptops
-// @include mediaLg {
-// }
-
-//Widescreens
-// @include mediaXL {
-// }
+//Smartphones
+@include mediaSm {
+  main#home .lg-heading {
+    font-size: 50px;
+  }
+  .sm-heading {
+    font-size: 1rem;
+  }
+}
