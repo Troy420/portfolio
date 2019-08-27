@@ -1,22 +1,22 @@
 // Landscape
-@include mediaLandscape {
-  main {
-    padding: 2rem;
-  }
+// @include mediaLandscape {
+//   main {
+//     padding: 2rem;
+//   }
 
-  main#home #name {
-    margin-top: 0;
-  }
+//   main#home #name {
+//     margin-top: 0;
+//   }
 
-  .menu-branding .portrait {
-    height: 100px;
-    width: 100px;
-  }
+//   .menu-branding .portrait {
+//     height: 100px;
+//     width: 100px;
+//   }
 
-  .menu-nav .nav-item .nav-link {
-    font-size: 1rem;
-  }
-}
+//   .menu-nav .nav-item .nav-link {
+//     font-size: 1rem;
+//   }
+// }
 
 // Widescreens
 @include mediaXL {
@@ -41,6 +41,7 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 5rem;
     }
   }
 
@@ -69,8 +70,8 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      height: 140px;
-      width: 140px;
+      height: 180px;
+      width: 180px;
     }
   }
 
@@ -99,6 +100,10 @@
 @include mediaSm {
   main#home #name {
     margin-top: 15vh;
+  }
+
+  main .lg-heading {
+    font-size: 3rem;
   }
 
   .sm-heading {
