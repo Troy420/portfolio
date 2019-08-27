@@ -16,16 +16,16 @@ body {
 }
 
 // Headings
-h1,
+#name,
 h2,
 h3 {
   margin: 0;
   font-weight: 400;
   text-transform: capitalize;
 
-  &.lg-heading {
-    font-size: 6rem;
-  }
+  // &.lg-heading {
+  //   font-size: 6rem;
+  // }
 
   &.sm-heading {
     margin-bottom: 2rem;
@@ -51,12 +51,11 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
-  // min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
 
   &#home {
     overflow: hidden;
-    h1 {
+    #name {
       margin-top: 20vh;
     }
   }
@@ -71,6 +70,10 @@ main {
         color: $secondary-color;
         @include easeOut;
       }
+    }
+
+    .fab {
+      color: set-text-color($primary-color);
     }
   }
 }
@@ -144,7 +147,7 @@ main {
 
   div {
     font-size: 2rem;
-    border: 3px #fff solid;
+    border: 3px solid $secondary-color;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -193,6 +196,79 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+// SVG
+
+#name {
+  width: 60vw;
+  animation: primary-fill 2s ease forwards 3s;
+}
+
+#name path:nth-child(1) {
+  stroke-dasharray: 630;
+  stroke-dashoffset: 630;
+  animation: line-anime 2s ease forwards;
+}
+#name path:nth-child(2) {
+  stroke-dasharray: 513.14;
+  stroke-dashoffset: 513.14;
+  animation: line-anime 2s ease forwards 0.3s;
+}
+#name path:nth-child(3) {
+  stroke-dasharray: 565.82;
+  stroke-dashoffset: 565.82;
+  animation: line-anime 2s ease forwards 0.6s;
+}
+#name path:nth-child(4) {
+  stroke-dasharray: 612.83;
+  stroke-dashoffset: 612.83;
+  animation: line-anime 2s ease forwards 0.9s;
+}
+#name path:nth-child(5) {
+  stroke-dasharray: 518.77;
+  stroke-dashoffset: 518.77;
+  animation: line-anime 2s ease forwards 1.2s;
+}
+#name path:nth-child(6) {
+  stroke-dasharray: 565.82;
+  stroke-dashoffset: 565.82;
+  animation: line-anime 2s ease forwards 1.5s;
+}
+#name path:nth-child(7) {
+  stroke-dasharray: 596.11;
+  stroke-dashoffset: 596.11;
+  animation: line-anime 2s ease forwards 1.8s;
+}
+#name path:nth-child(8) {
+  stroke-dasharray: 391.44;
+  stroke-dashoffset: 391.44;
+  animation: line-anime 2s ease forwards 2.1s;
+}
+#name path:nth-child(9) {
+  stroke-dasharray: 559.44;
+  stroke-dashoffset: 559.44;
+  animation: line-anime 2s ease forwards 2.4s;
+}
+#name path:nth-child(10) {
+  stroke-dasharray: 576.22;
+  stroke-dashoffset: 576.22;
+  animation: line-anime 2s ease forwards 2.7s;
+}
+
+@keyframes line-anime {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes primary-fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: $secondary-color;
+  }
 }
 
 @import "mobile";

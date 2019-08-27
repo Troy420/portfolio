@@ -1,5 +1,7 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+@import "palette";
+
+$primary-color: $SPACE_CADET;
+$secondary-color: $EARTH_YELLOW;
 $show-home-image: true;
 $show-image: url(../img/primary-bg.jpg);
 $background-opacity: 0.8;
