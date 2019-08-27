@@ -1,3 +1,23 @@
+// Landscape
+@include mediaLandscape {
+  main {
+    padding: 2rem;
+  }
+
+  main#home #name {
+    margin-top: 0;
+  }
+
+  .menu-branding .portrait {
+    height: 100px;
+    width: 100px;
+  }
+
+  .menu-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+}
+
 // Widescreens
 @include mediaXL {
   .projects {
@@ -77,24 +97,16 @@
 
 //Smartphones
 @include mediaSm {
-  main#home h1 {
+  main#home #name {
     margin-top: 15vh;
   }
 
-  main#home .lg-heading {
-    font-size: 3rem;
-  }
   .sm-heading {
     font-size: 1rem;
   }
 
   .projects {
     grid-template-columns: 1fr;
-  }
-
-  main .lg-heading {
-    font-size: 3rem;
-    margin-top: 1rem;
   }
 
   main .sm-heading {
@@ -122,10 +134,6 @@
 }
 
 @include mediaXsm {
-  main#home .lg-heading {
-    font-size: 2.5rem;
-  }
-
   main .icons {
     font-size: 0.7rem;
   }
