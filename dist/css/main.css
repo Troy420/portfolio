@@ -1,5 +1,6 @@
 /* Coolors Exported Palette - coolors.co/1f2041-adfcf9-89a894-f5fbef-04724d */
 /* HEX */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -96,7 +97,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/primary-bg.jpg);
