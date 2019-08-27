@@ -1,3 +1,5 @@
+/* Coolors Exported Palette - coolors.co/1f2041-adfcf9-89a894-f5fbef-04724d */
+/* HEX */
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -39,7 +41,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(55, 55, 55, 0.9);
+    background: rgba(21, 29, 60, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -51,7 +53,7 @@
       .menu-nav .nav-item.show {
         transform: translate3d(0, 0, 0); }
       .menu-nav .nav-item.current > a {
-        color: #eece1a; }
+        color: #ddb967; }
       .menu-nav .nav-item .nav-link {
         display: inline-block;
         position: relative;
@@ -63,7 +65,7 @@
         text-decoration: none;
         transition: all 0.5s ease-out; }
         .menu-nav .nav-item .nav-link:hover {
-          color: #eece1a; }
+          color: #ddb967; }
   .menu .nav-item:nth-child(1) {
     transition-delay: 0.1s; }
   .menu .nav-item:nth-child(2) {
@@ -73,7 +75,7 @@
   .menu .nav-item:nth-child(4) {
     transition-delay: 0.4s; }
   .menu-branding {
-    background: rgba(68, 68, 68, 0.9);
+    background: rgba(27, 38, 79, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -84,13 +86,13 @@
       background: url(../img/my-photo.jpg);
       background-size: contain;
       border-radius: 50%;
-      border: 3px solid #eece1a; }
+      border: 3px solid #ddb967; }
 
 * {
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #1b264f;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -107,25 +109,21 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.8);
+      background: rgba(27, 38, 79, 0.8);
       z-index: -1; }
 
-h1,
+#name,
 h2,
 h3 {
   margin: 0;
   font-weight: 400;
   text-transform: capitalize; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 6rem; }
-  h1.sm-heading,
+  #name.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(30, 42, 87, 0.5); }
 
 a {
   color: #fff;
@@ -137,22 +135,24 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #ddb967; }
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main#home {
     overflow: hidden; }
-    main#home h1 {
+    main#home #name {
       margin-top: 20vh; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #ddb967;
         transition: all 0.5s ease-out; }
+    main .icons .fab {
+      color: #fff; }
 
 .about-info {
   display: grid;
@@ -165,7 +165,7 @@ main {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    border: 3px solid #eece1a; }
+    border: 3px solid #ddb967; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -176,9 +176,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #212f62;
     padding: 0.5rem;
-    border-bottom: 5px solid #eece1a; }
+    border-bottom: 5px solid #ddb967; }
 
 .projects {
   display: grid;
@@ -189,7 +189,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #ddb967;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -200,13 +200,13 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
-    border: 3px #fff solid;
+    border: 3px solid #ddb967;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #ddb967;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -217,7 +217,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #ddb967;
     color: #000; }
 
 .btn-dark {
@@ -225,15 +225,79 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #909fd9;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #0e1429;
   color: #fff;
   height: 60px; }
+
+#name {
+  width: 60vw;
+  animation: primary-fill 2s ease forwards 3s; }
+
+#name path:nth-child(1) {
+  stroke-dasharray: 630;
+  stroke-dashoffset: 630;
+  animation: line-anime 2s ease forwards; }
+
+#name path:nth-child(2) {
+  stroke-dasharray: 513.14;
+  stroke-dashoffset: 513.14;
+  animation: line-anime 2s ease forwards 0.3s; }
+
+#name path:nth-child(3) {
+  stroke-dasharray: 565.82;
+  stroke-dashoffset: 565.82;
+  animation: line-anime 2s ease forwards 0.6s; }
+
+#name path:nth-child(4) {
+  stroke-dasharray: 612.83;
+  stroke-dashoffset: 612.83;
+  animation: line-anime 2s ease forwards 0.9s; }
+
+#name path:nth-child(5) {
+  stroke-dasharray: 518.77;
+  stroke-dashoffset: 518.77;
+  animation: line-anime 2s ease forwards 1.2s; }
+
+#name path:nth-child(6) {
+  stroke-dasharray: 565.82;
+  stroke-dashoffset: 565.82;
+  animation: line-anime 2s ease forwards 1.5s; }
+
+#name path:nth-child(7) {
+  stroke-dasharray: 596.11;
+  stroke-dashoffset: 596.11;
+  animation: line-anime 2s ease forwards 1.8s; }
+
+#name path:nth-child(8) {
+  stroke-dasharray: 391.44;
+  stroke-dashoffset: 391.44;
+  animation: line-anime 2s ease forwards 2.1s; }
+
+#name path:nth-child(9) {
+  stroke-dasharray: 559.44;
+  stroke-dashoffset: 559.44;
+  animation: line-anime 2s ease forwards 2.4s; }
+
+#name path:nth-child(10) {
+  stroke-dasharray: 576.22;
+  stroke-dashoffset: 576.22;
+  animation: line-anime 2s ease forwards 2.7s; }
+
+@keyframes line-anime {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes primary-fill {
+  from {
+    fill: transparent; }
+  to {
+    fill: #ddb967; } }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -301,7 +365,8 @@ main {
   .bio p {
     font-size: 1rem; }
   .menu-nav .nav-item .nav-link {
-    font-size: 20px; } }
+    padding: 0.5rem;
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 320px) {
   main#home .lg-heading {
